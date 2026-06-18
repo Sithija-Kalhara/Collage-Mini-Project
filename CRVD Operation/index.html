@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生情報 CRUD 操作 / STUDENT DETAILS CRUD OPERATION</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+  <h1>学生情報 CRUD 操作 / STUDENT DETAILS CRUD OPERATION</h1>
+
+  <div id="input-container">
+    <input type="text" id="name-input" placeholder="氏名 / ENTER NAME">
+    <input type="number" id="age-input" placeholder="年齢 / ENTER AGE">
+
+    <select id="country-input" required>
+      <option value="" selected disabled>国籍 / SELECT COUNTRY</option>
+      <option class="country">バングラデシュ / BANGLADESH</option>
+      <option class="country">カナダ / CANADA</option>
+      <option class="country">インド / INDIA</option>
+      <option class="country">日本 / JAPAN</option>
+      <option class="country">モンゴル / MONGOLIA</option>
+      <option class="country">ネパール / NEPAL</option>
+      <option class="country">パキスタン / PAKISTAN</option>
+      <option class="country">スリランカ / SRI LANKA</option>
+      <option class="country">イギリス / UK</option>
+      <option class="country">アメリカ / USA</option>
+    </select>
+
+    <input type="email" id="email-input" placeholder="メールアドレス / ENTER EMAIL">
+    <button id="add-btn">追加 / ADD</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>学籍番号<br>ROLLNO</th>
+        <th>氏名<br>NAME</th>
+        <th>年齢<br>AGE</th>
+        <th>国籍<br>COUNTRY</th>
+        <th>メールアドレス<br>EMAIL ID</th>
+        <th>操作<br>ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+
+  <div id="update-container">
+    <input type="text" id="update-name-input" placeholder="氏名 / UPDATE NAME">
+    <input type="number" id="update-age-input" placeholder="年齢 / UPDATE AGE">
+
+    <select id="update-country-input" required>
+      <option classname="select-country" value="" selected disabled >国籍 / SELECT COUNTRY</option>
+      <option>バングラデシュ / BANGLADESH</option>
+      <option>カナダ / CANADA</option>
+      <option>インド / INDIA</option>
+      <option>日本 / JAPAN</option>
+      <option>モンゴル / MONGOLIA</option>
+      <option>ネパール / NEPAL</option>
+      <option>パキスタン / PAKISTAN</option>
+      <option>スリランカ / SRI LANKA</option>
+      <option>イギリス / UK</option>
+      <option>アメリカ / USA</option>
+    </select>
+
+    <input type="email" id="update-email-input" placeholder="メールアドレス / UPDATE EMAIL">
+    <button id="update-btn">更新 / UPDATE</button>
+    <button id="cancel-btn">キャンセル / CANCEL</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

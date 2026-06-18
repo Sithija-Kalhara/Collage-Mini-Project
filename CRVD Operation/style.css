@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #20b2aa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#container {
+  width: 100%;
+  max-width: 1150px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#input-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  background: white;
+}
+
+input::placeholder {
+  color: #acacac;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.country{
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+select:invalid {
+  color: #acacac;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+select:valid {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.4);
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#add-btn {
+  background: #28a745;
+}
+
+#update-btn {
+  background: #007bff;
+}
+
+#cancel-btn,
+.delete-btn {
+  background: #dc3545;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #20b2aa;
+}
+
+th {
+  color: white;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+td {
+  color: #000;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tbody tr:hover {
+  background: #e9f5ff;
+}
+
+#update-container {
+  display: none;
+  margin-top: 25px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+#update-container input,
+#update-container select {
+  margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+  #input-container {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}

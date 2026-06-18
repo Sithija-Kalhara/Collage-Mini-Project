@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attractive Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calendar">
+
+  <div class="calendar-header">
+    <button onclick="prevMonth()">❮</button>
+
+    <div>
+      <h2 id="monthYear"></h2>
+      <p id="fullDate"></p>
+    </div>
+
+    <button onclick="nextMonth()">❯</button>
+  </div>
+
+  <div class="weekdays">
+    <span>Sun</span>
+    <span>Mon</span>
+    <span>Tue</span>
+    <span>Wed</span>
+    <span>Thu</span>
+    <span>Fri</span>
+    <span>Sat</span>
+  </div>
+
+  <div class="days" id="days"></div>
+
+  <div class="calendar-footer">
+    <button onclick="prevYear()">Prev Year</button>
+    <button onclick="goToday()">Today</button>
+    <button onclick="nextYear()">Next Year</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
