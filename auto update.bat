@@ -9,7 +9,7 @@ if not exist .git (
 )
 
 git add .
-git commit -m "Auto update at startup: %date% %time%"
+git commit --allow-empty -m "Auto update at startup: %date% %time%"
 git push origin main
 
 pause
