@@ -1,0 +1,16 @@
+CREATE TABLE Appointments
+(
+AppointmentID INT PRIMARY KEY,
+PatientID INT,
+DoctorID INT,
+AppointmentDate DATE,
+Fees DECIMAL(8,2)
+);
+
+INSERT INTO Appointments VALUES
+(301, 101, 201, '2025-01-10', 500),
+(302, 102, 202, '2025-01-12', 700),
+(303, 101, 203, '2025-01-15', 600),
+(304, 103, 202, '2025-01-18', 700),
+(305, 106, 204, '2025-01-20', 800),
+(306, 102, 206, '2025-01-22', 900);
